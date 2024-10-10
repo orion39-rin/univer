@@ -36,6 +36,12 @@ immutable_var[4][1] = 'True'
 print(immutable_var)
 immutable_var[4][2] = True
 print(immutable_var)
+immutable_var[4].insert(2, 'V') # делаем вставку нового элемента списка
+print(immutable_var)
+del immutable_var[4][2]                        # удаляем этот элемент
+print(immutable_var)
+del immutable_var[4][1:3]
+print(immutable_var)
 
 immutable_var = (1, 'два', 3.14)
 print('кортеж immutable_var =', immutable_var, type(immutable_var), immutable_var.__sizeof__(), 'bytes')

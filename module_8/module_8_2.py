@@ -58,6 +58,8 @@ def personal_sum(numbers):
             result += n
         except TypeError as exc:
             incorrect_data += 1
+            # можно подогнать под вывод из задания:
+            print(f'Некорректный тип данных для подсчёта суммы - {n}')
 
     return (result, incorrect_data)
 
